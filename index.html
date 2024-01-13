@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Creative Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <div class="header-content">
+            <h1>Hariharan Jayakumar</h1>
+            <p>Cyber Security Analyst </p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Works</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>        
+        </div>
+    </header>
+
+    <section id="about" class="section-about">
+        <div class="section-content">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img.jpg" alt="Your Name" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        As a third-year student pursuing a degree in Cyber Security at Hindustan Institute of Technology and Science, I am deeply passionate about forging a successful career in the field of cybersecurity. Motivated by a relentless curiosity and a commitment to staying at the forefront of technological advancements, I have dedicated myself to acquiring a comprehensive understanding of cybersecurity principles, practices, and emerging threats. My academic journey has equipped me with a solid foundation in areas such as network security, cryptography, and ethical hacking. Beyond the classroom, I actively seek opportunities to apply my knowledge through hands-on projects, internships, and participation in cybersecurity competitions. I am driven by a desire to contribute to the safeguarding of digital assets and privacy, and I am confident that my skills, coupled with my unwavering dedication, position me as a promising candidate ready to make valuable contributions in the dynamic and ever-evolving field of cybersecurity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section-skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skill-row">
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <div class="skill-bar" data-percent="75"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Cyber Security</h3>
+                    <div class="skill-bar" data-percent="87"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Graphic Design</h3>
+                    <div class="skill-bar" data-percent="90"></div>
+                </div>
+            </div>
+            <div class="skill-row">
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+    <section id="languages" class="section-languages">
+        <div class="section-content">
+            <h2>Languages</h2>
+            <div class="language-grid">
+                <div class="language-item">
+                    <img src="html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="language-item">
+                    <img src="css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="language-item">
+                    <img src="php.png" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="language-item">
+                    <img src="js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="language-item">
+                    <img src="bash.png" alt="Bash">
+                    <p>Bash</p>
+                </div>
+                <div class="language-item">
+                    <img src="python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section-projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <!-- Add your projects here -->
+            <div class="project-item">
+                <h3>Health Management System</h3>
+                    <h4>(Web Application)</h4>
+                    <br>
+                <p>Developed a web application that enables patients to access their medical records and
+                    prescriptions. Implemented secure user authentication and data privacy measures.
+                    Collaborated with a team of developers to ensure smooth functionality and user
+                    experience.</p>
+            </div>
+            <div class="project-item">
+                <h3>Text File Steganography</h3>
+                   <h4> (Encryption Project)</h4>
+                   <br>
+                <p>Implemented steganography techniques to convert text files into image format. Used
+                    encryption algorithms to store text data in image pixels. Ensured data integrity and
+                    security throughout the process.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-container">
+            <input type="file" id="certificateFile" accept=".pdf, .jpg, .jpeg, .png" multiple>
+            <div class="certificates-scroll">
+                 <div class="certificate-item">
+                    <img src="cert1.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate-item">
+                    <img src="cert2.jpg" alt="Certificate 2">
+                </div>
+                <div class="certificate-item">
+                    <img src="cert3.jpg" alt="Certificate 3">
+                </div>
+                <div class="certificate-item">
+                    <img src="cert4.jpg" alt="Certificate 4">
+                </div>
+                <div class="certificate-item">
+                    <img src="cert5.jpg" alt="Certificate 5">
+                </div>
+                <div id="certificateModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="certificateImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+   <section id="contact" class="section-contact">
+    <div class="section-content">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="https://github.com/hariharan31303" target="_blank" class="contact-link">
+                <img src="git.png" alt="GitHub">
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/hari-haran-j-a4955821a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+                <img src="link.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="mailto:hariharan31303@gmail.com" class="contact-link">
+                <img src="gmail.png" alt="Gmail">
+                Email
+            </a>
+            <a href="https://www.instagram.com/__.h._a_x._i._?igsh=YTB2NmowZHF1Yzg3" target="_blank" class="contact-link">
+                <img src="insta.png" alt="Instagram">
+                Instagram
+            </a>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
